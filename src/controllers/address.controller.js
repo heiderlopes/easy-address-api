@@ -1,13 +1,13 @@
 const { Address, addresses } = require("../models/address.model");
 
 function createAddress(req, res) {
-  const { userName, cep, logradouro, bairro, localidade, uf, tipo } = req.body;
+  const { nomeUsuario, cep, logradouro, bairro, cidade, uf, tipo } = req.body;
   const address = new Address({
-    userName,
+    nomeUsuario,
     cep,
     logradouro,
     bairro,
-    localidade,
+    cidade,
     uf,
     tipo,
   });
