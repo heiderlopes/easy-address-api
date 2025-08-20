@@ -2,9 +2,9 @@ let addresses = [];
 let idCounter = 1;
 
 class Address {
-  constructor({ userName, cep, logradouro, bairro, cidade, uf, tipo }) {
+  constructor({ nomeUsuario, cep, logradouro, bairro, cidade, uf, tipo }) {
     this.id = idCounter++;
-    this.userName = userName;
+    this.nomeUsuario = nomeUsuario;
     this.cep = cep;
     this.logradouro = logradouro;
     this.bairro = bairro;
